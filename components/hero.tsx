@@ -28,6 +28,7 @@ export const Hero = () => {
                       words="Transforming concepts into seamless experiences join"
                       className=" text-center text-[40px] md:text-5xl lg:text-[6xl]"
                       />
+                      
              </div>
         </div>
     </div>
