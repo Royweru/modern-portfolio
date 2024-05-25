@@ -1,6 +1,9 @@
+import { BiArrowToRight } from "react-icons/bi";
 import { Spotlight } from "./ui/Spotlight";
+import { MagicButton } from "./ui/magic-button";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import { FaLocationArrow } from "react-icons/fa";
 
 export const Hero = () => {
 
@@ -27,9 +30,10 @@ export const Hero = () => {
                         Ultimate Weru web magician
                   </h2>
                 <TextGenerateEffect 
-                words="Transforming concepts into seamless experiences"
+                words="Transforming concepts into seamless user experiences"
                 className=" text-center text-[40px] md:text-5xl lg:text-6xl relative"
                 />
+                <MagicButton title="Show my work" icon={<FaLocationArrow/>} position="right"/>
              </div>
         </div>
     </div>
