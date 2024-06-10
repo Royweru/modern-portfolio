@@ -1,48 +1,24 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { gridItems } from "@/data";
 
 export const Grid = () => {
-  const gridItems = [
-    {
-      id: 1,
-      title: "Firstone",
-      description:
-        " lorrem ippsumm lorem ipsum is lorem and again is lorem ipsum is again and again is it and it",
-    },
-    {
-      id: 2,
-      title: "Secondone",
-      description:
-        " lorrem ippsumm lorem ipsum is lorem and again is lorem ipsum is again and again is it and it",
-    },
-    {
-      id: 3,
-      title: "Thirdone",
-      description:
-        " lorrem ippsumm lorem ipsum is lorem and again is lorem ipsum is again and again is it and it",
-    },
-    {
-      id: 4,
-      title: "Fourthone",
-      description:
-        " lorrem ippsumm lorem ipsum is lorem and again is lorem ipsum is again and again is it and it",
-    },
-    {
-      id: 5,
-      title: "Fifthone",
-      description:
-        " lorrem ippsumm lorem ipsum is lorem and again is lorem ipsum is again and again is it and it",
-    },
-  ];
   return (
-    <section id="about">
-      <BentoGrid>
-        {gridItems.map((item) => (
+    <section id="about" className=" bg-transparent">
+      <BentoGrid className="w-full py-2">
+        {gridItems.map((item, i) => (
           <BentoGridItem
-            key={item.id}
             id={item.id}
+            key={i}
             title={item.title}
             description={item.description}
+            // remove icon prop
+            // remove original classname condition
+            className={item.className}
+            img={item.img}
+            imgClassName={item.imgClassName}
+            titleClassName={item.titleClassName}
+            spareImg={item.spareImg}
           />
         ))}
       </BentoGrid>

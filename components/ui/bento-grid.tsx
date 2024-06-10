@@ -1,15 +1,15 @@
+"use client";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
+// Also install this npm i --save-dev @types/react-lottie
 
 import { cn } from "@/utils/cn";
 
 import { BackgroundGradientAnimation } from "./bg-gradient-animation";
 import { GridGlobe } from "./grid-globe";
 import animationData from "@/data/confetti.json";
-import MagicButton from "../MagicButton";
+import { MagicButton } from "./magic-button";
 
 export const BentoGrid = ({
   className,
@@ -52,7 +52,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const rightLists = ["Django", "Node", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
 
@@ -66,7 +66,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "weruroy347@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -79,11 +79,9 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        //   add these two
-        //   you can generate the color from here https://cssgradient.io/
-        background: "rgb(4,7,29)",
+        background: "rgb(2,0,36)",
         backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,80,48,1) 29%, rgba(0,212,255,1) 100%)",
       }}
     >
       {/* add img divs */}
@@ -125,13 +123,13 @@ export const BentoGridItem = ({
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#e4e4e4] z-10">
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 text-white-100`}
           >
             {title}
           </div>
