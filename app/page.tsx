@@ -1,8 +1,11 @@
+import { Approach } from "@/components/approach";
 import { Clients } from "@/components/clients";
+import { Experience } from "@/components/experience";
 import { Grid } from "@/components/grid";
 import { Hero } from "@/components/hero";
 import { RecentProjects } from "@/components/recent-projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
+import Footer from "@/components/ui/footer";
 import { navItems } from "@/data";
 import { BiHome } from "react-icons/bi";
 
@@ -15,6 +18,9 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Clients />
+        <Experience />
+        <Approach />
+        <Footer />
       </div>
     </main>
   );
