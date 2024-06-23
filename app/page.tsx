@@ -5,13 +5,13 @@ import { Grid } from "@/components/grid";
 import { Hero } from "@/components/hero";
 import { RecentProjects } from "@/components/recent-projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import Footer from "@/components/ui/footer";
+import Footer from "@/components/footer";
 import { navItems } from "@/data";
 import { BiHome } from "react-icons/bi";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5">
       <div className=" max-w-6xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
