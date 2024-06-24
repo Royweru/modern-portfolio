@@ -4,8 +4,9 @@ export const Planning = () => {
     <section className="relative py-4 bg-transparent w-full md:px-6">
       <h1 className="text-cyan-400 font-semibold heading my-4">Pricing</h1>
       <div className="w-full mx-auto space-y-3 px-4 sm:text-center sm:px-0 mt-4">
-        <p className="text-white md:text-3xl font-semibold  text-sm text-center">
-          Pay as you grow
+        <p className="text-white font-semibold  text-sm text-center">
+          Pay as you grow, this prices include a monthly fee charged for
+          maintanance and upkeep
         </p>
 
         <div
@@ -28,13 +29,26 @@ export const Planning = () => {
             >
               <div className="p-4 py-8 space-y-4 border-b border-gray-700 md:p-8">
                 <span className="text-gray-200 font-medium">{item.name}</span>
-                <div className="text-cyan-400 text-3xl font-semibold">
-                  ${item.price} <span className="text-xl font-normal">/mo</span>
+                <div className=" text-center font-semibold txt-lg text-white-200">
+                  ${item.usd}
                 </div>
-                <p className="text-gray-400">{item.desc}</p>
-                <button className="px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700">
-                  Get Started
-                </button>
+                <div className="text-cyan-400 text-3xl font-semibold">
+                  Kes {item.price}
+                </div>
+                <p className="text-gray-400">
+                  {item.desc}
+                  <span className=" ml-2  text-zinc-100 italic font-extralight text-sm">
+                    a monthly maintanance fee of {item.maintanance}{" "}
+                  </span>
+                </p>
+                <a href="emailto:weruroy347@gmail.com">
+                  <button
+                    className="px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 
+                text-white bg-cyan-500 hover:bg-cyan-600 active:bg-cyan-700"
+                  >
+                    Reach out
+                  </button>
+                </a>
               </div>
               <ul className="p-4 py-8 space-y-3 md:p-8">
                 {item.features.map((featureItem, idx) => (

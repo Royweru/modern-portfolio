@@ -7,7 +7,7 @@ export const Techtools = () => {
     <div className=" py-20" id="testimonials">
       <h1 className=" heading text-white">
         Technologies
-        <span className=" ml-3 text-purple"> used to build</span>
+        <span className=" ml-3 text-purple"> used in development</span>
       </h1>
       <div className=" flex flex-col items-center max-lg:mt-10">
         <InfiniteMovingCards items={techtools} direction="right" speed="fast" />

@@ -4,6 +4,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import { socialMedia } from "@/data";
 
 const Footer = () => {
+  const date = new Date().getFullYear();
   return (
     <footer className=" w-full pt-20 pb-10" id="contact">
       <div className=" w-full absolute left-0 -bottom-24 min-h-96">
@@ -34,7 +35,7 @@ const Footer = () => {
       </div>
       <div className=" flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className=" md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Roy
+          Copyright © {date} Everything design
         </p>
         <div className=" flex items-center md:gap-3 gap-6">
           {socialMedia.map((profile) => (
