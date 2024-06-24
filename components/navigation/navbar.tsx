@@ -10,9 +10,9 @@ export const Navbar = () => {
   // Replace javascript:void(0) path with your path
   const navigation = [
     { title: "About", path: "#about" },
-    { title: "Portfolio", path: "#portfolio" },
-    { title: "Work ethic", path: "javascript:void(0)" },
-    { title: "Tools", path: "javascript:void(0)" },
+    { title: "Portfolio", path: "#projects" },
+    { title: "Work ethic", path: "#approach" },
+    { title: "Tools", path: "#tools" },
   ];
 
   useEffect(() => {
@@ -92,10 +92,10 @@ export const Navbar = () => {
             <ul className="flex flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
               <li className="mt-8 mb-8 lg:mt-0 lg:mb-0">
                 <a
-                  href="javascript:void(0)"
+                  href="#contact"
                   className="text-gray-600 hover:text-indigo-600"
                 >
-                  <button className="px-8 py-0.5  border-2 border-black dark:border-white uppercase bg-white text-purple transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] ">
+                  <button className="px-8 py-0.5  border-2 border-black dark:border-white uppercase bg-white transition duration-200  text-indigo-900 hover:text-black shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] ">
                     Contact
                   </button>
                 </a>
@@ -108,7 +108,7 @@ export const Navbar = () => {
                 return (
                   <li
                     key={idx}
-                    className=" text-primary hover:text-indigo-600 font-semibold"
+                    className=" text-primary hover:text-indigo-600 font-semibold hover:text-2xl"
                   >
                     <a href={item.path}>{item.title}</a>
                   </li>

@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 export const Approach = () => {
   return (
-    <section className=" w-full py-20">
+    <section className=" w-full py-20" id="approach">
       <h1 className=" heading">
         Our
         <span className=" text-purple ml-3">work appproach</span>

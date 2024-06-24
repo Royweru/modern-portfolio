@@ -4,7 +4,7 @@ import { techtools } from "@/data";
 
 export const Techtools = () => {
   return (
-    <div className=" py-20" id="testimonials">
+    <div className=" py-20" id="tools">
       <h1 className=" heading text-white">
         Technologies
         <span className=" ml-3 text-purple"> used in development</span>
