@@ -12,7 +12,7 @@ export const InfiniteMovingCards = ({
   items: {
     quote: string;
     name: string;
-    title: string;
+    img: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -86,12 +86,12 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className=" w-[500px] max-w-full relative rounded-2xl
-             border border-b-0 flex-shrink-0 border-slate-800 p-5 md:p-8 md:w-[450px]"
+            className=" w-96 max-w-full relative rounded-3xl
+             border border-b-0 flex-shrink-0 border-neutral-900 p-4 md:p-6 md:w-[400px]"
             style={{
-              background: "rgb(2,0,36)",
+              background: " rgb(2,0,36)",
               backgroundColor:
-                "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,80,48,1) 29%, rgba(0,212,255,1) 100%)",
+                "linear-gradient(99deg, rgba(2,0,36,1) 1%, rgba(58,166,185,1) 53%, rgba(184,18,43,0.9866071428571429) 100%)",
             }}
             key={item.name}
           >
@@ -105,16 +105,20 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <div className=" me-3">
-                    <img src="/profile.svg" alt="profile" />
+                  <div className=" me-3 flex w-full justify-center items-center">
+                    <img
+                      src={item.img}
+                      alt="profile"
+                      className=" w-[200px] h-[150px]"
+                    />
                   </div>
 
-                  <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  <span className=" text-2xl leading-[1.6] text-secondary-foreground font-semibold">
                     {item.name}
                   </span>
-                  <span className=" text-sm leading-[1.6] text-white-200 font-normal">
+                  {/* <span className=" text-sm leading-[1.6] text-white-200 font-normal">
                     {item.title}
-                  </span>
+                  </span> */}
                 </span>
               </div>
             </blockquote>

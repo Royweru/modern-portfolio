@@ -1,25 +1,24 @@
 import { Approach } from "@/components/approach";
-import { Clients } from "@/components/clients";
+import { Techtools } from "@/components/techtools";
 import { Experience } from "@/components/experience";
 import { Grid } from "@/components/grid";
 import { Hero } from "@/components/hero";
 import { RecentProjects } from "@/components/recent-projects";
-import { FloatingNav } from "@/components/ui/floating-navbar";
 import Footer from "@/components/footer";
-import { navItems } from "@/data";
-import { BiHome } from "react-icons/bi";
+import { Navbar } from "@/components/navigation/navbar";
+import { Planning } from "@/components/planning";
 
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col  mx-auto sm:px-10 px-5">
       <div className=" max-w-6xl w-full">
-        <FloatingNav navItems={navItems} />
+        <Navbar />
         <Hero />
         <Grid />
         <RecentProjects />
-        <Clients />
-        <Experience />
+        <Techtools />
         <Approach />
+        <Planning />
         <Footer />
       </div>
     </main>
