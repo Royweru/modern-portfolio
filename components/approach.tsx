@@ -23,9 +23,9 @@ export const Approach = () => {
           />
         </Card>
         <Card
-          title="Plannig and strategy"
+          title="Crafting Your Visual Identity"
           icon={<AceternityIcon order="Phase 2" />}
-          description="We'll colaborate to map out your website's goals, target audience, key funconalities. We'll discuss things like site structures, navigation and content requirements"
+          description="In this phase, we focus on creating a compelling design using Figma. This involves carefully selecting the right images, fonts, colors, and other visual elements. Our goal is to ensure your website not only looks appealing but also maintains a consistent and engaging user experience. By paying attention to these details, we help make sure users love interacting with your site."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -42,7 +42,7 @@ export const Approach = () => {
         <Card
           title="Development and launch"
           icon={<AceternityIcon order="Phase 3" />}
-          description="We'll colaborate to map out your website's goals, target audience, key funconalities. We'll discuss things like site structures, navigation and content requirements"
+          description="This crucial phase involves developing your website using the most suitable technology, whether it be WordPress, Webflow, React JS, or Next JS. At this stage, we focus on building the structure, debugging issues, and ensuring responsiveness across all devices. Our dedicated effort during this phase ensures your website is robust, efficient, and ready for a successful launch."
         >
           <CanvasRevealEffect
             animationSpeed={3}
