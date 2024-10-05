@@ -105,7 +105,7 @@ export const InfiniteMovingCards = ({
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
-                  <div className=" me-3 flex w-full justify-center items-center">
+                  <div className=" mx-auto flex w-full justify-center items-center">
                     <img
                       src={item.img}
                       alt="profile"

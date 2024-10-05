@@ -1,7 +1,7 @@
 import { pricingPlans } from "@/data";
 export const Planning = () => {
   return (
-    <section className="relative py-4 bg-transparent w-full md:px-6">
+    <section className="relative py-4 bg-transparent w-full md:px-6" id="pricing">
       <h1 className="text-cyan-400 font-semibold heading my-4">Pricing</h1>
       <div className="w-full mx-auto space-y-3 px-4 sm:text-center sm:px-0 mt-4">
         <p className="text-white font-semibold  text-sm text-center">
