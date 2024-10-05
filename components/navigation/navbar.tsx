@@ -43,7 +43,9 @@ export const Navbar = () => {
             <img
               src="./edesignlogo.png"
               alt="Float UI logo"
-              className=" bg-cover w-[100px] h-[70px] "
+              height={70}
+              width={70}
+              className=" bg-cover "
             />
           </a>
           <div className="lg:hidden">
