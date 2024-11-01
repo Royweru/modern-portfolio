@@ -102,7 +102,7 @@ export const projects = [
     id: 4,
     title: "Hotel booking",
     des: "Find and book the perfect hotel effortlessly. The platform offers a wide selection of accommodations tailored to your preferences, from budget-friendly stays to luxury escapes.",
-    img: "/p4.svg",
+    img: "/project4.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/project1.png",
   },
@@ -216,9 +216,9 @@ export const pricingPlans = [
   {
     name: "Small-scale",
     desc: "Ideal for personal websites or small business landing pages.",
-    maintanance: "17,000",
-    usd: "503",
-    price: " 65,000",
+    maintanance: "13,500",
+    usd: "310",
+    price: " 40,000",
     isMostPop: false,
     features: [
       "Responsive design",
@@ -233,9 +233,9 @@ export const pricingPlans = [
   {
     name: "Standard",
     desc: "Perfect for growing businesses and professional blogs.",
-    maintanance: "18,500",
-    price: "85,000",
-    usd: "658",
+    maintanance: "14,000",
+    price: "65,000",
+    usd: "503",
     isMostPop: true,
     features: [
       "Responsive design",
@@ -250,9 +250,9 @@ export const pricingPlans = [
   {
     name: "Large-scale",
     desc: "Suitable for large businesses and e-commerce sites with extensive features. Mostly full stack applications fall under this category",
-    maintanance: "30,000",
-    price: "200,000",
-    usd: "1550",
+    maintanance: "15,000",
+    price: "180,000",
+    usd: "1,395",
     isMostPop: false,
     features: [
       "Responsive design",
